@@ -20,5 +20,9 @@ const puppeteer = require('puppeteer');
   await page.waitFor(2000)
   await page.click('a.global-nav--wac__button--secondary')
   await page.waitFor(2000)
+  await page.click('span[role=link]')
+  await page.waitFor(2000)
+  await page.click('li.span')
+  await page.waitFor(2000)
   await browser.close();
 })();
